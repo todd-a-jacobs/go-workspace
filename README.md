@@ -25,7 +25,7 @@ included in the source tree.
 
 This README is licensed under the [Creative Commons
 Attribution-NonCommercial-ShareAlike 3.0 United States
-License][BY_NC_SA_3]
+License][BY_NC_SA_3].
 
 ## Purpose
 
