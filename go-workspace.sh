@@ -6,8 +6,8 @@
 # Purpose:
 #     Configure a Go workspace and essential environment variables.
 # Usage:
-#    go_setup.sh [-h|-u]
-#    go_setup.sh [-g <GOPATH>] [-b <GOBIN>] [-s <SHELLRC>] [-d] [-v]
+#    go-workspace.sh [-h|-u]
+#    go-workspace.sh [-g <GOPATH>] [-b <GOBIN>] [-s <SHELLRC>] [-d] [-v]
 # Options:
 #    -h = show documentation
 #    -u = show usage
