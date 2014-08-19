@@ -126,10 +126,6 @@ update_shellrc () {
         echo "export GOBIN='$GOBIN'" >> "$SHELLRC"
     fi
 
-    if ! grep -Fq GOBIN "$SHELLRC"; then
-        echo "export GOBIN='$GOBIN'" >> "$SHELLRC"
-    fi
-
     if ! { grep -F PATH "$SHELLRC" | grep -Fq "$GOBIN"; }; then
         echo 'export PATH="$PATH:$GOBIN"' >> "$SHELLRC"
     fi
