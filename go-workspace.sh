@@ -46,7 +46,7 @@ init () {
     set -e
     set -o noclobber
 
-    : ${GOPATH:=$HOME/go}
+    : ${GOPATH:=\$HOME/go}
     : ${GOBIN:=\$GOPATH/bin}
 
     # Heuristics if SHELLRC is unset.
