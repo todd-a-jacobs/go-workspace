@@ -127,7 +127,7 @@ update_shellrc () {
     fi
 
     # Ensure GOBIN is appended to PATH.
-    if ! { grep -F PATH "$SHELLRC" | grep -Fq "$GOBIN"; }; then
+    if ! { grep -F PATH "$SHELLRC" | grep -Eq "[$]GOBIN|$GOBIN"; }; then
         echo 'export PATH="$PATH:$GOBIN"' >> "$SHELLRC"
     fi
 }
