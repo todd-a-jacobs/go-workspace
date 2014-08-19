@@ -119,6 +119,7 @@ show_variables () {
 
 update_shellrc () {
     if ! grep -Fq GOPATH "$SHELLRC"; then
+        echo >> "$SHELLRC"
         echo "export GOPATH='$GOPATH'" >> "$SHELLRC"
     fi
 
